@@ -23,10 +23,8 @@ namespace LocalBusiness.Services
 
     private List<User> _users = new List<User> 
     {
-      new User { Id = 1, FirstName = "Todders", LastName = "W", Username = "todd", Password = "this" },
-      new User { Id = 2, FirstName = "Alyssa", LastName = "C", Username = "alyssa", Password = "is" },
-      new User { Id = 3, FirstName = "Alex", LastName = "S", Username = "alex", Password = "not" },
-      new User { Id = 4, FirstName = "Mariam", LastName = "A", Username = "mariam", Password = "easy" }
+      new User { Id = 1, FirstName = "Alyssa", LastName = "c", Username = "alyssa", Password = "password" },
+
     };
 
     public UserService(IOptions<AppSettings> appSettings)
