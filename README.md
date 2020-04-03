@@ -14,9 +14,9 @@ http://localhost:5004/api/businesses/5
 
 | Endpoint | Http Action | Return data |
 | ------------- |:-------------:| -------------------:|
-| /api/businesses  | GET | { "businessId": 1, "name": "Jane's Cafe", "manager": "Jane", "yearJoined": 2003, "certNumber": 123345, mainAddress: "123 Street", "latitude": 123.234556m, "longitude": 123.234556m, "phone": "123-345-4567", "email": "jane@cafe.com", "ada": true } |
-| /api/businesses  | POST | new Business in database: { "businessId": 2, "name": "Macy's Tavern", "manager": "Macy", "yearJoined": 2008, "certNumber": 123678, mainAddress: "123 Street", "latitude": 123.234556m, "longitude": 123.234556m, "phone": "503-345-4567", "email": "macy@tavern.com", "ada": false } |
-| /api/businesses/2 | PUT | update Business 2 in database: { "businessId": 2, "name": "Jane's Cafe and Bar", "manager": "Jane", "yearJoined": 2003, "certNumber": 123345, mainAddress: "123 Street", "latitude": 123.234556m, "longitude": 123.234556m, "phone": "123-345-4567", "email": "jane@cafeandbar.com", "ada": true } |
+| /api/businesses  | GET | { "businessId": 1, "name": "Jane's Cafe", "manager": "Jane", "yearJoined": 2003, "certNumber": 123345, "latitude": 123.234556m, "longitude": 123.234556m, "phone": "123-345-4567", "email": "jane@cafe.com", "ada": true } |
+| /api/businesses  | POST | new Business in database: { "businessId": 2, "name": "Macy's Tavern", "manager": "Macy", "yearJoined": 2008, "certNumber": 123678, "latitude": 123.234556m, "longitude": 123.234556m, "phone": "503-345-4567", "email": "macy@tavern.com", "ada": false } |
+| /api/businesses/2 | PUT | update Business 2 in database: { "businessId": 2, "name": "Jane's Cafe and Bar", "manager": "Jane", "yearJoined": 2003, "certNumber": 123345, "latitude": 123.234556m, "longitude": 123.234556m, "phone": "123-345-4567", "email": "jane@cafeandbar.com", "ada": true } |
 | /api/businesses/2 | DELETE | remove Business with id 2 from database |
 |
 
