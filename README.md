@@ -79,7 +79,7 @@ _Add the MySQL environment variable to the System PATH. Instructions for Windows
 _Enter the following commands in Terminal (macOS) or PowerShell (Windows):_
 * ``cd desktop``
 * ``git clone`` followed by the URL to this repository
-* ``cd TravelBlogAPI.Solution/TravelBlog``
+* ``cd LocalBusinessAPI2.Solution/TravelBlog``
 
 _Confirm that you have navigated to the TravelBlog directory (e.g., by entering the command_ ``pwd`` _in Terminal)._
 
@@ -88,8 +88,8 @@ _Confirm that you have navigated to the TravelBlog directory (e.g., by entering 
 _Enter the following commands in Terminal (macOS) or PowerShell (Windows):_
 * ``cd ~``
 * ``cd desktop``
-* ``git clone https://github.com/acolistro/TravelBlogAPI.Solution``
-* ``cd TravelBlogAPI.Solution/TravelBlog``
+* ``git clone https://github.com/acolistro/LocalBusinessAPI2.Solution``
+* ``cd LocalBusinessAPI2.Solution/TravelBlog``
 * ``dotnet restore``
 * ``dotnet build``
 * ``dotnet ef database update``
@@ -97,10 +97,10 @@ _Enter the following commands in Terminal (macOS) or PowerShell (Windows):_
 
 ## Run this MVC application in another Terminal or PowerShell window
 
-_Run this MVC application by entering the following command in Terminal (macOS) or PowerShell (Windows) at the root of the TravelBlogAPI directory:_
+_Run this MVC application by entering the following command in Terminal (macOS) or PowerShell (Windows) at the root of the LocalBusinessAPI2 directory:_
 * ``dotnet run`` or ``dotnet watch run``
 
-_To view/edit the source code of this application, open the contents of the TravelBlogAPI.Solution directory in a text editor or IDE of your choice (e.g., to open all contents of the directory in Visual Studio Code on macOS, enter the command_ ``code .`` _in Terminal at the root of the TravelBlogMVC.Solution directory)._
+_To view/edit the source code of this application, open the contents of the LocalBusinessAPI2.Solution directory in a text editor or IDE of your choice (e.g., to open all contents of the directory in Visual Studio Code on macOS, enter the command_ ``code .`` _in Terminal at the root of the TravelBlogMVC.Solution directory)._
 
 ## Technologies Used
 
@@ -113,7 +113,7 @@ _To view/edit the source code of this application, open the contents of the Trav
 * Entity Framework Core 2.2
 * RestSharp version 106.6.10
 * Newtonsoft.Json version 12.0.2
-* [Travel API version 1.0](https://github.com/acolistro/TravelBlogAPI.Solution)
+* [Travel API version 1.0](https://github.com/acolistro/LocalBusinessAPI2.Solution)
 
 ## License
 
