@@ -19,9 +19,46 @@ namespace LocalBusiness.Controllers
 
     // GET api/Business
     [HttpGet]
-    public ActionResult<IEnumerable<Business>> Get()
+    public ActionResult<ICollection<Business>> Get(int businessId, string name, string manager, int yearJoined, int certNumber, decimal location, string phone, string email)
     {
-      return _db.Businesses.ToList();
+      var query = _db.Businesses.AsQueryable();
+
+      if (businessId != 0)
+      {
+        query = query.Where(entry => entry.BusinessId == businessId);
+      }
+
+      if (name != null)
+      {
+        query = query.Where(entry => entry.Name.Contains(name));
+      }
+
+      if (manager != null)
+      {
+        query = query.Where(entry => entry.Manager.Contains(manager));
+      }    
+
+      if (yearJoined != 0)
+      {
+        query = query.Where(entry => entry.YearJoined == yearJoined);
+      }
+
+      if (certNumber != 0)
+      {
+        query = query.Where(entry => entry.CertNumber == certNumber);
+      }
+
+      if (phone != null)
+      {
+        query = query.Where(entry => entry.Phone.Contains(phone));
+      }
+
+      if (email != null)
+      {
+        query = query.Where(entry => entry.Email.Contains(email));
+      }
+      
+      return query.ToList();
     }
 
     // POST api/Business
