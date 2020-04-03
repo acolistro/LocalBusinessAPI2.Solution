@@ -14,10 +14,16 @@ namespace LocalBusiness.Models
         [Required]
         public int CertNumber { get; set; }
         [Required]
-        public decimal Location { get; set; }
+        public string MainAddress { get; set; }
+        [Required]
+        public decimal Latitude { get; set; }
+        [Required]
+        public decimal Longitude { get; set; }
         [Required]
         public string Phone { get; set; }
         [Required]
         public string Email { get; set; }
+        [Required]
+        public bool ADA { get; set; }
     }
 }
