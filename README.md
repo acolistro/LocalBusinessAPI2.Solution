@@ -8,6 +8,18 @@
 
 _This API allows users to GET, POST, PUT, and DELETE reviews about various travel destinations around the world._
 
+## Endpoint Documentation:
+
+http://localhost:5004/api/businesses/5
+
+| Endpoint | Http Action | Return data |
+| ------------- |:-------------:| -------------------:|
+| /api/businesses  | GET | { "businessId": 1, "name": "Jane's Cafe", "manager": "Jane", "yearJoined": 2003, "certNumber": 123345, "location": 123.234556m, "phone": "123-345-4567", "email": "jane@cafe.com"  } |
+| /api/businesses  | POST | new Business in database: { "businessId": 2, "name": "Macy's Tavern", "manager": "Macy", "yearJoined": 2008, "certNumber": 123678, "location": 123.234098m, "phone": "503-345-4567", "email": "macy@tavern.com" } |
+| /api/businesses/2 | PUT | update Business 2 in database: { "businessId": 2, "name": "Jane's Cafe and Bar", "manager": "Jane", "yearJoined": 2003, "certNumber": 123345, "location": 123.234556m, "phone": "123-345-4567", "email": "jane@cafeandbar.com" } |
+| /api/businesses/2 | DELETE | remove Business with id 2 from database |
+|
+
 ## Specification user stories:
 | Specification | Example Input | Example Output |
 | ------------- |:-------------:| -------------------:|
