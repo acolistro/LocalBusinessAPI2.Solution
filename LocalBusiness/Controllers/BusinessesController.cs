@@ -30,5 +30,12 @@ namespace LocalBusiness.Controllers
       _db.Businesses.Add(business);
       _db.SaveChanges();
     }
+
+    // GET api/animals/5
+    [HttpGet("{id}")]
+    public ActionResult<Business> Get(int id)
+    {
+        return _db.Businesses.FirstOrDefault(entry => entry.BusinessId == id);
+    }
   }
 }
