@@ -19,7 +19,7 @@ namespace LocalBusiness.Controllers
 
     // GET api/Business
     [HttpGet]
-    public ActionResult<ICollection<Business>> Get(int businessId, string name, string manager, int yearJoined, int certNumber, decimal location, string phone, string email)
+    public ActionResult<ICollection<Business>> Get(int businessId, string name, string manager, int yearJoined, int certNumber, decimal latitude, decimal longitude, string phone, string email, bool ada)
     {
       var query = _db.Businesses.AsQueryable();
 
@@ -27,6 +27,7 @@ namespace LocalBusiness.Controllers
       {
         query = query.Where(entry => entry.BusinessId == businessId);
       }
+
 
       if (name != null)
       {

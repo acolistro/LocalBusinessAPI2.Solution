@@ -2,14 +2,16 @@
 using LocalBusiness.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LocalBusiness.Migrations
 {
     [DbContext(typeof(LocalBusinessContext))]
-    partial class LocalBusinessContextModelSnapshot : ModelSnapshot
+    [Migration("20200403233125_UpdateProps")]
+    partial class UpdateProps
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,6 +33,9 @@ namespace LocalBusiness.Migrations
                     b.Property<decimal>("Latitude");
 
                     b.Property<decimal>("Longitude");
+
+                    b.Property<string>("MainAddress")
+                        .IsRequired();
 
                     b.Property<string>("Manager")
                         .IsRequired();
@@ -56,6 +61,7 @@ namespace LocalBusiness.Migrations
                             Email = "sde@asdf.com",
                             Latitude = 123.123132m,
                             Longitude = 234.34556m,
+                            MainAddress = "123 Street",
                             Manager = "Tom",
                             Name = "Tiki",
                             Phone = "123-2345",
@@ -69,6 +75,7 @@ namespace LocalBusiness.Migrations
                             Email = "asd@asdf.com",
                             Latitude = 234.43589m,
                             Longitude = 123.123456m,
+                            MainAddress = "234 Street",
                             Manager = "Fred",
                             Name = "Rexie",
                             Phone = "123-1234",
@@ -82,6 +89,7 @@ namespace LocalBusiness.Migrations
                             Email = "arc@asdf.com",
                             Latitude = 123.456767m,
                             Longitude = 345.67878m,
+                            MainAddress = "456 Street",
                             Manager = "Steve",
                             Name = "Matilda",
                             Phone = "234-3456",
@@ -95,6 +103,7 @@ namespace LocalBusiness.Migrations
                             Email = "asd@asd.com",
                             Latitude = 123.123123m,
                             Longitude = 678.23456m,
+                            MainAddress = "567 Street",
                             Manager = "Becky",
                             Name = "Pip",
                             Phone = "123-345-3456",
@@ -108,6 +117,7 @@ namespace LocalBusiness.Migrations
                             Email = "ngr@asds.com",
                             Latitude = 123.123m,
                             Longitude = 456.23456m,
+                            MainAddress = "876 Street",
                             Manager = "Dinosaur",
                             Name = "Annie",
                             Phone = "234-2345",
