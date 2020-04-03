@@ -21,23 +21,14 @@ http://localhost:5004/api/businesses/5
 |
 
 ## Specification user stories:
-| Specification | Example Input | Example Output |
-| ------------- |:-------------:| -------------------:|
-| If user visits '/' root route, the application displays a splash page with links to '/Reviews', '/Destinations'  and '/Users' | user visits '/' route | application displays homepage |
-| Application allows a user to register for an account with Identity | user clicks "login/register" option on splash page, then completes form at '/Account/Register' | application creates new user account and redirects to '/Login' |
-| Application allows a registered user to login | registered user clicks "log in" option at '/Account' | application redirects to '/Account/Login' |
-| Application allows a registered user to logout | registered user clicks "logout" option at '/Account' | application logs out of user account |
-| Only registered, logged-in users are able to create, update, and delete reviews | user is not logged in and/or not registered and clicks "add review", "edit review", or "delete review" | user redirected to login page |
-If user visits '/Destinations' route, the application displays all destinations in the database, ordered from highest rated to lowest rated | user visits '/Destinations' | application displays list of all reviews in order of rating |
-| If a registered user clicks "add new destination" link at '/Destinations', the application redirects to a form ('/Destinations/Create') for adding a new destination | registered user clicks "add new destination" | the application redirects to form at 'Destinations/Create' |
-| When a registered user submits the new destination form, the application adds the new destination to the destinations table of the travel database and redirects to '/Destinations' | registered user submits new destination form | the application adds new destination to destinations table and redirects to '/Destinations' |
-| A registered user can delete a destination from the list of all destinations | registered user selects "delete destination" option | application deletes destination from database |
-| A registered user can edit a destination from the list of all destinations | registered user selects "edit destination" | application redirects to edit form |
-| If user visits '/Reviews' route, the application displays all reviews in the database, ordered from highest rated to lowest rated | user visits '/Reviews' | application displays list of all reviews in order of rating |
-| If a registered user clicks "add new review" link at '/Reviews', the application redirects to a form ('/Reviews/Create') for adding a new review | registered user clicks "add new review" | the application redirects to form at 'Reviews/Create' |
-| When a registered user submits the new review form, the application adds the new review to the reviews table of the travel database and redirects to '/Reviews' | registered user submits new review form | the application adds new review to reviews table and redirects to '/Reviews' |
-| A registered user can delete a review from the list of all reviews | registered user selects "delete review" option | application deletes review from database |
-| A registered user can edit a review from the list of all reviews | registered user selects "edit review" | application redirects to edit form |
+
+## Specification user stories:
+* A user is able to read (GET) a list of all businesses in the database.
+* A user is able to filter their search by various query parameters, including: business name, business manager, the year the business joined, the registered phone number ant location.
+* A user is able to create (POST) a new business entry in the database.
+* A user is able to edit (PUT) an existing business entry in the database. 
+* A user is able to delete (DELETE) an existing business entry in the database.
+* A user is able to view details for a specific business, based on BusinessId.
 
 ## Setup/Installation Requirements
 
