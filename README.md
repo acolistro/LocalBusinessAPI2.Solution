@@ -119,4 +119,4 @@ _To view/edit the source code of this application, open the contents of the Loca
 
 Licensed under the MIT license.
 
-&copy; 2020 - Mariam Alaeddin, Alyssa Colistro, Alex Skreen, Todd Walraven
+&copy; 2020 Alyssa Colistro
