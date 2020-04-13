@@ -112,7 +112,10 @@ _To view/edit the source code of this application, open the contents of the Loca
   ``}``
 * A token will be generated, which you can copy and paste in the text area offered when you use token based authentication
 
-##Using CORS
+##A note on CORS:
+* CORS is a W3C standard that allows a server to relax the same-origin policy.
+* It is not a security feature, CORS relaxes security. An API is not safer by allowing CORS. For more information, see How CORS works via this link: https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-2.2#how-cors
+* CORS allows a server to explicitly allow some cross-origin requests while rejecting others.
 
 
 ## Technologies Used
@@ -126,7 +129,8 @@ _To view/edit the source code of this application, open the contents of the Loca
 * Entity Framework Core 2.2
 * RestSharp version 106.6.10
 * Newtonsoft.Json version 12.0.2
-* [Travel API version 1.0](https://github.com/acolistro/LocalBusinessAPI2.Solution)
+* JWT
+* CORS
 
 ## License
 
