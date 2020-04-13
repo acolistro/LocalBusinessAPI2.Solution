@@ -102,6 +102,19 @@ _Run this MVC application by entering the following command in Terminal (macOS) 
 
 _To view/edit the source code of this application, open the contents of the LocalBusinessAPI2.Solution directory in a text editor or IDE of your choice (e.g., to open all contents of the directory in Visual Studio Code on macOS, enter the command_ ``code .`` _in Terminal at the root of the TravelBlogMVC.Solution directory)._
 
+## Using JWT 
+* _Open Postman or your preferred app to manage and test APIs_
+* Create a Post request using the url ``localhost:5000/api/users/authenticate``
+* Enter:
+  ``{``
+	  ``"username": "alyssa",
+	  ``"password": "password"
+  ``}``
+* A token will be generated, which you can copy and paste in the text area offered when you use token based authentication
+
+##Using CORS
+
+
 ## Technologies Used
 
 * Git
